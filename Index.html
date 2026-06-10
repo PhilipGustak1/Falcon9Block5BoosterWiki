@@ -2,35 +2,41 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Falcon 9 Booster Log</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falcon Booster Log</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-    .toggle {
-        cursor: pointer;
-        padding: 8px;
-        margin: 6px 0;
-        background: #e0e0e0;
-        border: 1px solid #ccc;
-        width: fit-content;
-        user-select: none;
-    }
+.toggle {
+    cursor: pointer;
+    padding: 8px;
+    margin: 6px 0;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    width: fit-content;
+    user-select: none;
+    border-radius: 4px;
+}
 
-    .content {
-        display: none;
-        margin-left: 20px;
-        padding-left: 10px;
-        border-left: 2px solid #ddd;
-    }
+.toggle:hover {
+    background: #d5d5d5;
+}
 
-    .content.show {
-        display: block;
-    }
+.content {
+    display: none;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+}
+
+.content.show {
+    display: block;
+}
 </style>
-
 </head>
 
 <body>
@@ -41,6 +47,7 @@
 
 <div id="falcon9" class="content">
 
+    <!-- B1097 -->
     <div class="toggle" onclick="toggle('b1097')">B1097</div>
 
     <div id="b1097" class="content">
@@ -51,16 +58,16 @@
 
             <strong>Starlink 17-8</strong><br>
             Launch Date: 03/09/2025<br>
-            Landing: ASDS: Of Course I Still Love You<br>
+            Landing: ASDS - Of Course I Still Love You<br>
             Flight: 1<br><br>
 
             <strong>Starlink 11-39</strong><br>
             Launch Date: 03/10/2025<br>
-            Landing: ASDS: Of Course I Still Love You<br>
+            Landing: ASDS - Of Course I Still Love You<br>
             Flight: 2<br>
             Turnaround: 30 days<br><br>
 
-            <strong>Sentinal 6B</strong><br>
+            <strong>Sentinel 6B</strong><br>
             Launch Date: 17/11/2025<br>
             Landing: LZ-4<br>
             Flight: 3<br>
@@ -68,7 +75,7 @@
 
             <strong>Starlink 11-25</strong><br>
             Launch Date: 04/12/2025<br>
-            Landing: ASDS: Of Course I Still Love You<br>
+            Landing: ASDS - Of Course I Still Love You<br>
             Flight: 4<br>
             Turnaround: 17 days<br><br>
 
@@ -78,6 +85,10 @@
             Flight: 5<br>
             Turnaround: 38 days<br><br>
 
+        </div>
+    </div>
+
+    <!-- B1100 -->
     <div class="toggle" onclick="toggle('b1100')">B1100</div>
 
     <div id="b1100" class="content">
@@ -86,44 +97,45 @@
 
         <div id="b1100-launches" class="content">
 
-       <strong>Starlink 11-30</strong><br>
-       Launch Date: 23/11/2025<br>
-       Landing: ASDS: Of Course I Still Love You<br>
-       Flight: 1<br><br>
+            <strong>Starlink 11-30</strong><br>
+            Launch Date: 23/11/2025<br>
+            Landing: ASDS - Of Course I Still Love You<br>
+            Flight: 1<br><br>
 
-      <strong>NROL-105</strong><br>
-      Launch Date: 17/01/2026<br>
-      Landing: LZ-4<br>
-      Flight: 2<br>
-      Turnaround: 55 days<br><br>
+            <strong>NROL-105</strong><br>
+            Launch Date: 17/01/2026<br>
+            Landing: LZ-4<br>
+            Flight: 2<br>
+            Turnaround: 55 days<br><br>
 
-     <strong>Starlink 17-34</strong><br>
-     Launch Date: 11/02/2026<br>
-     Landing: ASDS: Of Course I Still Love You<br>
-     Flight: 3<br>
-     Turnaround: 25 days<br><br>
+            <strong>Starlink 17-34</strong><br>
+            Launch Date: 11/02/2026<br>
+            Landing: ASDS - Of Course I Still Love You<br>
+            Flight: 3<br>
+            Turnaround: 25 days<br><br>
 
-    <strong>Starlink 17-15</strong><br>
-    Launch Date: 20/03/2026<br>
-    Landing: ASDS: Of Course I Still Love You<br>
-    Flight: 4<br>
-    Turnaround: 37 days<br><br>
+            <strong>Starlink 17-15</strong><br>
+            Launch Date: 20/03/2026<br>
+            Landing: ASDS - Of Course I Still Love You<br>
+            Flight: 4<br>
+            Turnaround: 37 days<br><br>
 
-    <strong>Starlink 17-14</strong><br>
-    Launch Date: 23/04/2026<br>
-    Landing: ASDS: Of Course I Still Love You<br>
-    Flight: 5<br>
-    Turnaround: 34 days<br><br>
+            <strong>Starlink 17-14</strong><br>
+            Launch Date: 23/04/2026<br>
+            Landing: ASDS - Of Course I Still Love You<br>
+            Flight: 5<br>
+            Turnaround: 34 days<br><br>
 
-    <strong>Starlink 17-37</strong><br>
-    Launch Date: 26/05/2026<br>
-    Landing: ASDS: Of Course I Still Love You<br>
-    Flight: 6<br>
-    Turnaround: 33 days<br>
+            <strong>Starlink 17-37</strong><br>
+            Launch Date: 26/05/2026<br>
+            Landing: ASDS - Of Course I Still Love You<br>
+            Flight: 6<br>
+            Turnaround: 33 days<br><br>
 
         </div>
     </div>
 
+    <!-- B1101 -->
     <div class="toggle" onclick="toggle('b1101')">B1101</div>
 
     <div id="b1101" class="content">
@@ -135,19 +147,18 @@
             <strong>Starlink 6-88</strong><br>
             Launch Date: 04/01/2026<br>
             Landing: ASDS - Just Read The Instructions<br>
-            Flight: 1
-
-            <br><br>
+            Flight: 1<br><br>
 
             <strong>SpaceX Crew-12</strong><br>
             Launch Date: 13/02/2026<br>
             Landing: LZ-40<br>
             Flight: 2<br>
-            Turnaround: 40 days
+            Turnaround: 40 days<br><br>
 
         </div>
     </div>
 
+    <!-- B1103 -->
     <div class="toggle" onclick="toggle('b1103')">B1103</div>
 
     <div id="b1103" class="content">
@@ -159,15 +170,13 @@
             <strong>Starlink 17-35</strong><br>
             Launch Date: 07/04/2026<br>
             Landing: ASDS - Of Course I Still Love You<br>
-            Flight: 1
-
-            <br><br>
+            Flight: 1<br><br>
 
             <strong>Starlink 17-42</strong><br>
             Launch Date: 20/05/2026<br>
             Landing: ASDS - Of Course I Still Love You<br>
             Flight: 2<br>
-            Turnaround: 43 days
+            Turnaround: 43 days<br><br>
 
         </div>
     </div>
@@ -177,8 +186,9 @@
 <script>
 function toggle(id) {
     const el = document.getElementById(id);
-    if (!el) return;
-    el.classList.toggle("show");
+    if (el) {
+        el.classList.toggle("show");
+    }
 }
 </script>
 
