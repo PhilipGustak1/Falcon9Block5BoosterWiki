@@ -979,5 +979,50 @@ function toggle(id) {
 }
 </script>
 
+    <script>
+function toggle(id) {
+    const el = document.getElementById(id);
+    if (el) {
+        el.classList.toggle("show");
+    }
+}
+
+// Fix missing launch containers
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".toggle").forEach(btn => {
+        const onclick = btn.getAttribute("onclick");
+        if (!onclick) return;
+
+        const match = onclick.match(/toggle\('([^']+)'\)/);
+        if (!match) return;
+
+        const targetId = match[1];
+
+        if (!document.getElementById(targetId) &&
+            targetId.endsWith("-launches")) {
+
+            const container = document.createElement("div");
+            container.id = targetId;
+            container.className = "content";
+
+            let node = btn.nextElementSibling;
+            while (
+                node &&
+                !(
+                    node.classList &&
+                    node.classList.contains("toggle")
+                )
+            ) {
+                const next = node.nextElementSibling;
+                container.appendChild(node);
+                node = next;
+            }
+
+            btn.after(container);
+        }
+    });
+});
+</script>
+
 </body>
 </html>
